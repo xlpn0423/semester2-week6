@@ -123,9 +123,9 @@ void reverse_array(int *arr, int n) {
   // TODO: Implement this functionS
   
 
-  for (int i = 0; i < n; i++){
+  for (int i = 0; i < n/2; i++){
 
-    swap_values(arr[i] , arr [n - 1 - i])
+    swap_values(arr[i] , arr [n - 1 - i]);
   
   }
 
