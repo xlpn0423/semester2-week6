@@ -121,15 +121,14 @@ int sum_array(int *arr, int n) {
  */
 void reverse_array(int *arr, int n) {
   // TODO: Implement this functionS
-  int a[n];
+  
 
   for (int i = 0; i < n; i++){
 
-    a[n] = arr [n - 1 - i];
+    swap_values(arr[i] , arr [n - 1 - i])
   
   }
 
-  arr = a;
 
 }
 
@@ -153,7 +152,7 @@ double average(int *arr, int n) {
 
   int sum = sum_array(arr, n);
 
-  average = (double)sum / n;
+  double average = (double)sum / n;
 
   return average; // Replace this
 }
