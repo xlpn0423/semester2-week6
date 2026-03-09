@@ -70,6 +70,8 @@ int add_values(int a, int b) {
 void swap_values(int *a, int *b) {
   // TODO: Implement this function
   // Hint: You'll need a temporary variable
+  int c = 0; 
+
   c = *a ;
 
   *a = *b ;
@@ -91,7 +93,9 @@ void swap_values(int *a, int *b) {
  */
 int sum_array(int *arr, int n) {
   // TODO: Implement this function
-  for ( int i, i < n, i++){
+  int sum = 0;
+  
+  for ( int i; i < n; i++){
 
     *sum = *sum + arr[i];
 
@@ -117,15 +121,15 @@ int sum_array(int *arr, int n) {
  */
 void reverse_array(int *arr, int n) {
   // TODO: Implement this functionS
-  int a = [n];
+  int a[n];
 
-  for (int i; i < n, i++){
+  for (int i; i < n; i++){
 
-    a[n] = arr [n - i];
+    a[n] = arr [n - 1 - i];
   
   }
 
-  *arr = a;
+  arr = a;
 
 }
 
@@ -145,7 +149,9 @@ void reverse_array(int *arr, int n) {
 double average(int *arr, int n) {
   // TODO: Implement this function
   // Hint: Be careful with integer division!
-  int sum_array(arr, n, &sum);
+  int average = 0;
+
+  sum = int sum_array(arr, n);
 
   average = sum / n;
 
@@ -175,7 +181,7 @@ int find_max(int *arr, int n, int *index) {
   *index = 0;
   int max = 0;
 
-  for (int i, i < n, i++){
+  for (int i; i < n; i++){
 
     if (arr[i] > max){
       max = arr[i];
